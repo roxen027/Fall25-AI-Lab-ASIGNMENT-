@@ -1,0 +1,25 @@
+Use the pre-trained model by using the following code:
+```
+joblib.dump(model, "diabetes_model.pkl")
+print("Model saved as diabetes_model.pkl")
+```
+
+the preprocessed dataset is available in file `data.csv` having the data as:
+```
+Age,Sex,Ethnicity,BMI,Waist_Circumference,Fasting_Blood_Glucose,HbA1c,Blood_Pressure_Systolic,Blood_Pressure_Diastolic,Cholesterol_Total,Cholesterol_HDL,Cholesterol_LDL,GGT,Serum_Urate,Physical_Activity_Level,Dietary_Intake_Calories,Alcohol_Consumption,Smoking_Status,Family_History_of_Diabetes,Previous_Gestational_Diabetes
+58,Female,White,35.8,83.4,123.9,10.9,152,114,197.8,50.2,99.2,37.5,7.2,Moderate,1538,Moderate,Never,0,1
+48,Male,Asian,24.1,71.4,183.7,12.8,103,91,261.6,62.0,146.4,88.5,6.1,Moderate,2653,Moderate,Current,0,1
+34,Female,Black,25.0,113.8,142.0,14.5,179,104,261.0,32.1,164.1,56.2,6.9,Low,1684,Heavy,Former,1,0
+62,Male,Asian,32.7,100.4,167.4,8.8,176,118,183.4,41.1,84.0,34.4,5.4,Low,3796,Moderate,Never,1,0
+27,Female,Asian,33.5,110.8,146.4,7.1,122,97,203.2,53.9,92.8,81.9,7.4,Moderate,3161,Heavy,Current,0,0
+40,Female,Asian,33.6,96.1,75.0,13.5,170,90,152.3,44.5,190.0,77.5,6.4,Low,3460,None,Never,1,1
+58,Male,Black,33.2,100.0,97.7,13.3,131,80,199.8,77.9,73.4,52.1,4.7,High,3107,Moderate,Never,0,0
+```
+target column is Diabetes_Risk
+and other columns are features
+
+make dropdowns for all the features and take the values for dropdown from the file `data.csv` 
+except the Age,Sex,Ethnicity,BMI,Waist_Circumference,Fasting_Blood_Glucose,HbA1c,Blood_Pressure_Systolic,Blood_Pressure_Diastolic,Cholesterol_Total,Cholesterol_HDL,Cholesterol_LDL,GGT,Serum_Urate,Physical_Activity_Level,Dietary_Intake_Calories,Alcohol_Consumption,Smoking_Status,Family_History_of_Diabetes,Previous_Gestational_Diabetes columns, and add a button to predict the price
+
+
+Create a flask based web application, and make it dyanmic, and visually appealing and aesthetically pleasing and responsive.
